@@ -1,0 +1,35 @@
+.phone_icon {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone_icon p {
+    font-family: var(--m-font);
+    font-size: 18px;
+    margin-left: 15px;
+    position: relative;
+}
+
+.phone_icon::before {
+    content: '\2708';
+    font-size: 24px;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 30px;
+    animation: 2s loader infinite linear;
+    transform-origin: center;
+}
+
+@keyframes loader {
+    0% {
+        opacity: 1;
+        visibility: visible;
+        transform:  rotate(0deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(210px);
+    }
+}
