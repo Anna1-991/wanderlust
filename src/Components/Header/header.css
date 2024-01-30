@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Montserrat:wght@500&display=swap');
-
 .header_wrapper{
-    max-width: 1700px;
+    max-width: 1600px;
     width: 100%;
     height: 80px;
-    background: rgba(20, 20, 128, 0.856);
+    background: var(--bg-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +17,7 @@
 }
 
 .logo_container h1{
-    font-family: 'Edu TAS Beginner', cursive;
+    font-family: var(--m-font);
     font-size: 32px;
     color: var(--font-color);
 }
@@ -29,20 +27,27 @@
     height: 100px;
 }
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1240px){
     .logo_container h1{
-        font-size: 26px;
+        font-size: 25px;
     }
 }
 
 @media only screen and (max-width: 1024px){
     .logo_container h1{
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
+@media only screen and (max-width: 912px){
+    .logo_container h1{
+        font-size: 28px;
+    }
+}
+
+
 @media screen and (max-width: 480px){
     .logo_container h1{
-        font-size: 21px;
+        font-size: 18px;
     }
 }

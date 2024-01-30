@@ -3,16 +3,15 @@ import '../../../index.css';
 import "./dropdown.css";
 import { useOutSideClick } from "../../../hooks/useOutsideClick";
 import AirplanemodeActiveIcon from '@mui/icons-material/AirplanemodeActive';
+import { Link } from "react-router-dom";
 
 
-export function Dropdown() {
+export const Dropdown = () =>{
     const dropdownRef = useRef(null);
     const [isDropdownOpen, setDropdownOpen] = useState(false);
-
     const toggleDropdown = () => {
         setDropdownOpen(!isDropdownOpen);
     };
-
     useOutSideClick(dropdownRef, () => setDropdownOpen(false));
 
     return (
@@ -23,11 +22,11 @@ export function Dropdown() {
             </div>
                 {isDropdownOpen && 
                     <ul className={`dropdown_content ${isDropdownOpen ? 'open_anim' : ''}`}>
-                        <li className={`list ${isDropdownOpen ? 'open_anim1' : ''}`}>Փաթեթներ</li>
-                        <li className={`list ${isDropdownOpen ? 'open_anim2' : ''}`}>Ավիատոմսեր</li>
-                        <li className={`list ${isDropdownOpen ? 'open_anim3' : ''}`}>Վիզա</li>
-                        <li className={`list ${isDropdownOpen ? 'open_anim4' : ''}`}>Ճանապարհորդական <br/> ապպահովագրություն</li>
-                        <li className={`list ${isDropdownOpen ? 'open_anim5' : ''}`}>Մեր ուղևորները</li>
+                        <Link className={`list ${isDropdownOpen ? 'open_anim1' : ''}`}>Փաթեթներ</Link>
+                        <Link className={`list ${isDropdownOpen ? 'open_anim2' : ''}`}>Ավիատոմսեր</Link>
+                        <Link className={`list ${isDropdownOpen ? 'open_anim3' : ''}`}>Վիզա</Link>
+                        <Link className={`list ${isDropdownOpen ? 'open_anim4' : ''}`}>Ճանապարհորդական <br/> ապպահովագրություն</Link>
+                        <Link className={`list ${isDropdownOpen ? 'open_anim5' : ''}`}>Մեր ուղևորները</Link>
                     </ul>
                 }
         </div>

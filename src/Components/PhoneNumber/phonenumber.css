@@ -5,31 +5,28 @@
     align-items: center;
 }
 
-.phone_icon p {
-    font-family: var(--m-font);
+.phone_icon > i{
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+.phone_icon > a{
+    text-decoration: none;
+    color: var(--font-color);
     font-size: 18px;
-    margin-left: 15px;
-    position: relative;
+    font-family: var(--ff-all);
+    font-size: 16px;
+    margin-left: 10px;
 }
 
-.phone_icon::before {
-    content: '\2708';
-    font-size: 24px;
-    opacity: 0;
-    visibility: hidden;
-    margin-top: 30px;
-    animation: 2s loader infinite linear;
-    transform-origin: center;
-}
-
-@keyframes loader {
-    0% {
-        opacity: 1;
-        visibility: visible;
-        transform:  rotate(0deg);
+@media screen and (max-width: 1024px){
+    .phone_icon > a{
+        font-size: 15px;
     }
-    100% {
-        opacity: 1;
-        transform: translate(210px);
+}
+
+@media screen and (max-width: 912px) {
+    .phone_icon{
+        margin-top: 50px;
     }
 }

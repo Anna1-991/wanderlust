@@ -7,10 +7,8 @@ export const useOutSideClick = (ref, callback) => {
                 callback();
             }
         };
-
         // Attach click outside event listener when the component mounts
         document.addEventListener("mousedown", handleClickOutside);
-
         // Remove the event listener when the component unmounts
         return () => {
             document.removeEventListener("mousedown", handleClickOutside);

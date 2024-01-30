@@ -1,15 +1,15 @@
 import React from "react";
-import "../../index.css";
-import "./phonenumber.css";
+import './phonenumber.css';
 import { LocalPhone } from "@mui/icons-material";
 
-export function PhoneNumber() {
+const PhoneNumber = ({ number }) => {
     return (
         <div className="phone_icon">
-            <LocalPhone />
-            <div className="number_container">
-                <p>+374 99 99-99-99</p>
-            </div>
+            <LocalPhone/>
+            <a href={`tel:${number}`}>{number}</a>
+            <i class="fa-solid fa-plane fa-beat-fade"></i>
         </div>
     );
-}
+};
+
+export default PhoneNumber;
