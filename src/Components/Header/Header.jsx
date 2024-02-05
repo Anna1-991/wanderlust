@@ -4,7 +4,7 @@ import './header.css';
 import logo from '../../images/Logo.png';
 import { Navbar } from "./NavBar/Navbar";
 
-export function Header() {
+export const Header = () => {
     return(
         <header className="header_wrapper">
             <div className="logo_container">

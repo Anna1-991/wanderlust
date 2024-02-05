@@ -6,7 +6,7 @@ import { Home } from "../Home/Home";
 import { Partners } from "../Partners/Partners";
 import { Route, Routes } from "react-router";
 
-export function Main() {
+export const Main = () => {
     return(
         <main className="main_wrapper">
             <Header/>

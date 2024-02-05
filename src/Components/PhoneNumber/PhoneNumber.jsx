@@ -7,7 +7,7 @@ const PhoneNumber = ({ number }) => {
         <div className="phone_icon">
             <LocalPhone/>
             <a href={`tel:${number}`}>{number}</a>
-            <i class="fa-solid fa-plane fa-beat-fade"></i>
+            {/* <i class="fa-solid fa-plane fa-beat-fade"></i> */}
         </div>
     );
 };

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { WhatsApp } from "./Whatsapp/WhatsApp";
 import { Telegram } from "./Telegram/Telegram";
 
-export function SocialMedia() {
+export const SocialMedia = () => {
     const phoneNumber = '+37495060607';
     const message = "Hello, let's talk!!!";
 

@@ -141,9 +141,9 @@
     .dropdown_content.open_anim{
         margin: 0;
         top: 140px;
-        background: radial-gradient(circle at 60%, rgb(72, 72, 237), rgba(20, 20, 128));
+        background: radial-gradient(circle at 60%, rgb(32, 32, 179), rgb(24, 24, 108));
     }
     .dropdown_content > a{
-        padding: 20px;
+        padding: 5px 8px;
     }
 }
