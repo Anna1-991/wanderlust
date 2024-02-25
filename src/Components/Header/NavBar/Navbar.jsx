@@ -14,7 +14,7 @@ export const Navbar = () => {
                 <PhoneNumber number={'+374 99 99-99-99'}/>
             </div>
             <ul className="nav_bar container">
-                <Link to={'/Home'}>Գլխավոր</Link>
+                <Link to={'/'}>Գլխավոր</Link>
                 <Dropdown />
                 <Link to={'/Partners'}>Գործընկերներ</Link>
             </ul>

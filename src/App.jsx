@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './index.css';
 import { Main } from './Components/Main/Main';
 import Lottie from 'react-lottie';
-import Animation from './Animation'
+import Animation from './Lottie/Animation.json'
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -19,12 +19,14 @@ const App = () => {
   return (
       <div>
         {loading ? (
-          <Lottie options={{
-            animationData: Animation,
-            loop: true,
-            autoplay: true,
-          }}/>
-        ) : (
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+            <Lottie options={{
+              animationData: Animation,
+              loop: true,
+              autoplay: true,
+            }}/>
+          </div>
+          ) : (
           <div>
             <Main />
           </div>

@@ -5,18 +5,12 @@
     align-items: center;
 }
 
-.phone_icon > i{
-    font-size: 20px;
-    margin-left: 8px;
-}
-
 .phone_icon > a{
     text-decoration: none;
     color: var(--font-color);
     font-size: 18px;
     font-family: var(--ff-all);
     font-size: 16px;
-    margin-left: 10px;
 }
 
 @media screen and (max-width: 1024px){

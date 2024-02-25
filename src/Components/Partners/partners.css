@@ -11,6 +11,13 @@
     margin: 20px;
 }
 
+/* .partner_container div{
+    margin-left: 20px;
+    background-color: white;
+    width: 100%;
+    max-width: 200px;
+} */
+
 .partners{
     font-size: 28px;
     font-family: var(--ff-all);
